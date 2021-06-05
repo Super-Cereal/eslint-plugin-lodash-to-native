@@ -1,17 +1,16 @@
 # Rule to swap lodash map method on Array with native Array#map (map)
 
-Please describe the origin of the rule here.
+Правило находит использование функции _.map , например _.map(collection, fn), и, если это возможно, предлагает заменить его на использование нативного Array#map.
 
 
 ## Rule Details
-
-This rule aims to...
 
 Examples of **incorrect** code for this rule:
 
 ```js
 
-// fill me in
+let _ = require('lodash');
+_.map([1, 2, 3], (n) => n * n);
 
 ```
 
@@ -19,18 +18,12 @@ Examples of **correct** code for this rule:
 
 ```js
 
-// fill me in
+let _ = require('lodash');
+[1, 2, 3].map((n) => n * n);
+_.map({1: 1, 2: 2}, (n) => n * n);
+
+// переопределение "_"
+_ = {map: (n) => 2 * n};
+_.map([1, 2, 3], (n) => n * n)
 
 ```
-
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
-
-## When Not To Use It
-
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
