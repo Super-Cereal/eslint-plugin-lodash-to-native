@@ -1,16 +1,16 @@
 # eslint-plugin-lodash-to-native
 
-Plugin for working with lodash
+Плагин для работы с библиотекой `lodash`
 
 ## Installation
 
-You'll first need to install [ESLint](http://eslint.org):
+Сперва необходимо установить [ESLint](http://eslint.org):
 
 ```
 $ npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-lodash-to-native`:
+Затем, нужно установить `eslint-plugin-lodash-to-native`:
 
 ```
 $ npm i --save-dev https://github.com/Super-Cereal/eslint-plugin-lodash-to-native.git
@@ -19,7 +19,7 @@ $ npm i --save-dev https://github.com/Super-Cereal/eslint-plugin-lodash-to-nativ
 
 ## Usage
 
-Add `lodash-to-native` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Добавьте `lodash-to-native` к списку плагинов в файле конфигурации `.eslintrc`. Вы можете опустить приставку `eslint-plugin-`:
 
 ```json
 "plugins": [
@@ -28,7 +28,7 @@ Add `lodash-to-native` to the plugins section of your `.eslintrc` configuration 
 ```
 
 
-Then configure the rules you want to use under the rules section.
+Затем добавьте в `.eslintrc` необходимые вам правила, обозначив их важность(0 - подсказка, 1 - предупреждение, 2 - ошибка):
 
 ```json
 "rules": {
