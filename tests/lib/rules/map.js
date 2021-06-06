@@ -50,7 +50,21 @@ ruleTester.run('map', rule, {
         [1, 2, 3].map((n) => n * n);
       `,
     },
-
+    // Если к результату _.map() применять еще какие-то методы,
+    // то фикс правила не должен вызывать ошибки выполнения
+    {
+      code: `
+        const _ = require('lodash');
+        const z = [1, 2, 3];
+        _.map(z, (n) => n * n).map((n) => n * n);
+      `,
+      errors: [{message: 'Better to use native Array#map'}],
+      output: `
+        const _ = require('lodash');
+        const z = [1, 2, 3];
+        z.map((n) => n * n).map((n) => n * n);
+      `,
+    },
     // Если _.map(Array, fn()) растягивается на несколько строк,
     // а правило фиксит ошибку, то не возникает лишних ошибок
     {
