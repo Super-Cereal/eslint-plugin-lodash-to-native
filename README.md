@@ -40,10 +40,11 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
-
+## Rules
+Документация к правилам доступна в папке ./docs/rules
+Тесты к правилам доступны в папке ./tests/lib/rules (Фреймворк тестирования - mocha)
+### Supported Rules
 * map - Правило находит использование функции _.map , например _.map(collection, fn), и, если это возможно, предлагает заменить его на использование нативного Array#map.
-
 
 
 
