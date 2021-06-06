@@ -10,7 +10,7 @@
 $ npm i eslint --save-dev
 ```
 
-Затем, нужно установить `eslint-plugin-lodash-to-native`:
+Затем нужно установить `eslint-plugin-lodash-to-native`:
 
 ```
 $ npm i --save-dev https://github.com/Super-Cereal/eslint-plugin-lodash-to-native.git
