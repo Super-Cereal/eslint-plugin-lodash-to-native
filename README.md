@@ -48,7 +48,7 @@ Then configure the rules you want to use under the rules section.
 Исходный код правил доступен в папке [./lib/rules](https://github.com/Super-Cereal/eslint-plugin-lodash-to-native/tree/master/lib/rules) 
 
 ### Supported Rules
-* map - Правило находит использование функции _.map , например _.map(collection, fn), и, если это возможно, предлагает заменить его на использование нативного Array#map.
+* map - Правило находит использование функции `_.map`, например `_.map(collection, fn)`, и, если это возможно, предлагает заменить его на использование нативного `Array#map`.
 
 
 
