@@ -22,21 +22,17 @@ $ npm i --save-dev https://github.com/Super-Cereal/eslint-plugin-lodash-to-nativ
 Add `lodash-to-native` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
-{
-    "plugins": [
-        "lodash-to-native"
-    ]
-}
+"plugins": [
+    "lodash-to-native"
+]
 ```
 
 
 Then configure the rules you want to use under the rules section.
 
 ```json
-{
-    "rules": {
-        "lodash-to-native/rule-name": 1
-    }
+"rules": {
+    "lodash-to-native/rule-name": 1
 }
 ```
 
