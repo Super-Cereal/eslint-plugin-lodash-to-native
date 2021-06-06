@@ -12,9 +12,6 @@
   "scripts": {
     "test": "mocha tests --recursive"
   },
-  "dependencies": {
-    "requireindex": "^1.2.0"
-  },
   "devDependencies": {
     "eslint": "^7.28.0",
     "lodash": "^4.17.21",
